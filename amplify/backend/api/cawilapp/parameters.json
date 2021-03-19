@@ -1,5 +1,11 @@
 {
   "AppSyncApiName": "cawilapp",
   "DynamoDBBillingMode": "PAY_PER_REQUEST",
-  "DynamoDBEnableServerSideEncryption": false
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthCognitoUserPoolId": {
+    "Fn::GetAtt": [
+      "authamplifyappdd866896",
+      "Outputs.UserPoolId"
+    ]
+  }
 }

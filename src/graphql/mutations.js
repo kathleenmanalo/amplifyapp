@@ -11,8 +11,12 @@ export const createNote = /* GraphQL */ `
       name
       description
       image
+      _version
+      _deleted
+      _lastChangedAt
       createdAt
       updatedAt
+      owner
     }
   }
 `;
@@ -26,8 +30,12 @@ export const updateNote = /* GraphQL */ `
       name
       description
       image
+      _version
+      _deleted
+      _lastChangedAt
       createdAt
       updatedAt
+      owner
     }
   }
 `;
@@ -41,8 +49,12 @@ export const deleteNote = /* GraphQL */ `
       name
       description
       image
+      _version
+      _deleted
+      _lastChangedAt
       createdAt
       updatedAt
+      owner
     }
   }
 `;

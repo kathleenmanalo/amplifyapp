@@ -14,10 +14,9 @@
       "output": {
         "authConfig": {
           "defaultAuthentication": {
-            "authenticationType": "API_KEY",
-            "apiKeyConfig": {
-              "apiKeyExpirationDays": 365,
-              "description": "test"
+            "authenticationType": "AMAZON_COGNITO_USER_POOLS",
+            "userPoolConfig": {
+              "userPoolId": "authamplifyappdd866896"
             }
           },
           "additionalAuthenticationProviders": []
